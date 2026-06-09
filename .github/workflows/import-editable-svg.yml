@@ -20,8 +20,8 @@ jobs:
       - name: Extract editable SVG source package
         run: |
           mkdir -p editable-svg
-          cat _import/editable-svg-source.tar.gz.b64.part-* | base64 --decode > /tmp/editable-svg-source.tar.gz
-          tar -xzf /tmp/editable-svg-source.tar.gz -C editable-svg
+          cat _import/editable-svg-source.tar.xz.b64.part-* | base64 --decode > /tmp/editable-svg-source.tar.xz
+          tar -xJf /tmp/editable-svg-source.tar.xz -C editable-svg
           rm -rf _import
       - name: Commit extracted SVG sources
         run: |
