@@ -3,7 +3,7 @@ name: Import editable SVG package
 on:
   push:
     paths:
-      - '_import/editable-svg-source.tar.gz.b64'
+      - '_import/editable-svg-source.tar.gz.b64.part-*'
       - '.github/workflows/import-editable-svg.yml'
   workflow_dispatch:
 
@@ -21,7 +21,7 @@ jobs:
       - name: Extract editable SVG source package
         run: |
           mkdir -p editable-svg
-          base64 --decode _import/editable-svg-source.tar.gz.b64 > /tmp/editable-svg-source.tar.gz
+          cat _import/editable-svg-source.tar.gz.b64.part-* | base64 --decode > /tmp/editable-svg-source.tar.gz
           tar -xzf /tmp/editable-svg-source.tar.gz -C editable-svg
           rm -rf _import
       - name: Commit extracted SVG sources
