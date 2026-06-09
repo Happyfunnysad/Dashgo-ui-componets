@@ -1,0 +1,13 @@
+:root {
+  --dashgo-canvas: #0F172A;
+  --dashgo-surface: #1E293B;
+  --dashgo-border: #334155;
+  --dashgo-text-primary: #F8FAFC;
+  --dashgo-text-secondary: #CBD5E1;
+  --dashgo-text-muted: #94A3B8;
+  --dashgo-primary: #2563EB;
+  --dashgo-info: #22D3EE;
+  --dashgo-positive: #4ADE80;
+  --dashgo-attention: #FACC15;
+  --dashgo-negative: #F87171;
+}
