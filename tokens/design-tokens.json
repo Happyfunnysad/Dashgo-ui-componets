@@ -1,0 +1,15 @@
+{
+  "color": {
+    "canvas": "#0F172A",
+    "surface": "#1E293B",
+    "border": "#334155",
+    "text": "#F8FAFC",
+    "muted": "#94A3B8",
+    "primary": "#2563EB",
+    "positive": "#4ADE80",
+    "attention": "#FACC15",
+    "negative": "#F87171"
+  },
+  "spacing": {"xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "xxl": 32},
+  "radius": {"sm": 4, "md": 6, "lg": 8, "xl": 12, "pill": 999}
+}
